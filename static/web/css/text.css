@@ -1,0 +1,8 @@
+.main-menu .navigation>li.current>a {
+    color: var(--theme-color2);
+    font-weight: 700;
+}
+
+.main-menu .navigation>li.current:hover {
+    color: var(--theme-color2);
+}

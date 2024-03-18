@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link href="{% static "web/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "web/css/style.css" %}" rel="stylesheet">
+    <link href="{% static "web/css/text.css" %}" rel="stylesheet">
+
+    <link href="{% static "web/css/responsive.css" %}" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static "web/images/favicon.png" %}" type="image/x-icon">
+    <link rel="icon" href="{% static "web/images/favicon.png" %}" type="image/x-icon">
+
+    {% block stylesheet %}{% endblock %}
+</head>
+<body>
+
+    <div class="page-wrapper">
+        {% include "web/partials/header.html" %}
+        {% block content %}
+
+
+        {% endblock %}
+        {% include "web/partials/footer.html" %}
+    </div>
+
+    {% block js_plugins %}{% endblock %}
+
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="{% static "web/js/jquery.js" %}"></script>
+    <script src="{% static "web/js/popper.min.js" %}"></script>
+    <script src="{% static "web/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "web/js/jquery.fancybox.js" %}"></script>
+    <script src="{% static "web/js/jquery-ui.js" %}"></script>
+    <script src="{% static "web/js/wow.js" %}"></script>
+    <script src="{% static "web/js/appear.js" %}"></script>
+    <script src="{% static "web/js/select2.min.js" %}"></script>
+    <script src="{% static "web/js/swiper.min.js" %}"></script>
+    <script src="{% static "web/js/owl.js" %}"></script>
+    <script src="{% static "web/js/script.js" %}"></script>
+    {% block javascript %}{% endblock %}
+</body>
+</html>

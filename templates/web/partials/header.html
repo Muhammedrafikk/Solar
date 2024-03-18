@@ -1,0 +1,170 @@
+{% load static %}
+
+
+
+
+
+<header class="main-header header-style-two home4-style">
+
+  <div class="header-top d-none d-xl-block">
+    <div class="inner-container px-xl-0">
+      <div class="top-left">
+
+        <ul class="list-style-one">
+          <li><a href="{% url "web:index" %}">
+              <script type="text/javascript" style="display:none">
+                //<![CDATA[
+                window.__mirage2 = { petok: "42pufoIllV2dXK9pU.Y2PJu8wAak1qhihFj3pC2BztU-14400-0.0.1.1" };
+                //]]>
+              </script>
+              <script type="text/javascript"
+                src="../../../ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+              <img src="{% static "web/images/logo.svg" %}"
+                style=""><noscript><img src="{% static "web/images/logo.svg" %}"
+                  alt=""></noscript>
+            </a></li>
+        </ul>
+      </div>
+      <div class="top-right">
+        <ul class="useful-links">
+          <li><a href="#"><i class="fas fa-envelope"></i> <span class="__cf_email__"
+                data-cfemail="deb0bbbbbab6bbb2ae9ebdb1b3aebfb0a7f0bdb1b3">[email&#160;protected]</span></a>
+          </li>
+          <li><a href="#"><i class="fas fa-location-dot"></i> 88 Broklyn Golden Street. New York</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="header-lower px-xl-0">
+
+    <div class="main-box">
+      <div class="logo-box d-block d-lg-none">
+        <div class="logo"><a href="{% url "web:index" %}"><img src="{% static "web/images/logo.svg" %}"
+              style=""><noscript><img src="{% static "web/images/logo.svg" %}"
+                alt=""></noscript></a></div>
+      </div>
+
+       <div class="nav-outer">
+        <nav class="nav main-menu">
+          <ul class="navigation">
+            <li class="{% if request.path == '/' %}current{% endif %}"><a href="{% url 'web:index' %}">Home</a></li>
+            <li><a href="javascript:void(0)">Pages</a></li>
+            <li><a href="javascript:void(0)">Services</a></li>
+            <li><a href="javascript:void(0)">Shop</a></li>
+            <li><a href="javascript:void(0)">News</a></li>
+            <li><a href="javascript:void(0)">Contact</a></li>
+            <!-- <li class="{% if request.path == '/contact/' %}current{% endif %}"><a href="{% url 'web:contact' %}">Contact</a></li> -->
+
+
+          </ul>
+        </nav>
+
+        <div class="outer-box">
+          <div class="ui-btn-outer pe-0 me-0 border-0">
+          
+           
+          </div>
+          <a href="javascript:void(0)" class="theme-btn btn-style-one"><span class="btn-title">Get a
+              Quote</span></a>
+
+          <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mobile-menu">
+    <div class="menu-backdrop"></div>
+
+    <nav class="menu-box">
+      <div class="upper-box">
+        <div class="nav-logo"><a href="{% url "web:index" %}"><img src="{% static "web/images/logo.svg" %}"
+              style=""><noscript><img src="{% static "web/images/logo.svg" %}"
+                alt=""></noscript></a></div>
+        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+      </div>
+      <ul class="navigation clearfix">
+
+      </ul>
+      <ul class="contact-list-one">
+        <li>
+
+          <div class="contact-info-box">
+            <i class="icon lnr-icon-phone-handset"></i>
+            <span class="title">Call Now</span>
+            <a href="tel:+92880098670">+92 (8800) - 98670</a>
+          </div>
+        </li>
+        <li>
+
+          <div class="contact-info-box">
+            <span class="icon lnr-icon-envelope1"></span>
+            <span class="title">Send Email</span>
+            <a
+              href="https://html.kodesolution.com/cdn-cgi/l/email-protection#a1c9c4cdd1e1c2ceccd1c0cfd88fc2cecc"><span
+                class="__cf_email__"
+                data-cfemail="96fef3fae6d6f5f9fbe6f7f8efb8f5f9fb">[email&#160;protected]</span></a>
+          </div>
+        </li>
+        <li>
+
+          <div class="contact-info-box">
+            <span class="icon lnr-icon-clock"></span>
+            <span class="title">Send Email</span>
+            Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+          </div>
+        </li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="search-popup">
+    <span class="search-back-drop"></span>
+    <button class="close-search"><span class="fa fa-times"></span></button>
+    <div class="search-inner">
+      <form method="post" action="https://html.kodesolution.com/2024/solen-html/index.html">
+        <div class="form-group">
+          <input type="search" name="search-field" value placeholder="Search..." required>
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="sticky-header">
+    <div class="auto-container">
+      <div class="inner-container">
+
+        <div class="logo">
+          <a href="{% url "web:index" %}"><img src="{% static "web/images/logo.svg" %}"
+              style=""><noscript><img src="{% static "web/images/logo.svg" %}"
+                alt=""></noscript></a>
+        </div>
+
+        <div class="nav-outer">
+
+          <nav class="main-menu">
+            <div class="navbar-collapse show collapse clearfix">
+              <ul class="navigation clearfix">
+
+              </ul>
+            </div>
+          </nav>
+
+          <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
